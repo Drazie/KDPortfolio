@@ -1,8 +1,17 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&display=swap');
+﻿
+body {
+    font-family: 'Montserrat', sans-serif !important;
 
-body{
-    font-family: 'Montserrat', sans-serif;
+    color: rgba(172, 170, 190, 1);
+    text-rendering: optimizeLegibility;
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #3b3d54;
+    overflow: hidden; /*footer issue*/
 }
+
+
 
 .btn{
     border-radius: 8px;
@@ -88,3 +97,198 @@ body{
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+.wrap {
+    perspective-origin: center;
+}
+
+/*.page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}*/
+
+.page {
+    margin: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    border-radius: 3px;
+}
+
+.svg {
+    stroke: #7ceaa4;
+    position: absolute;
+    bottom: -100vh;
+    transform-style: preserve-3d;
+}
+
+    .svg:nth-child(1) {
+        left: 85%;
+        animation: raise1 11s linear infinite;
+        animation-delay: 0s;
+        transform: scale(-0.3) rotate(168deg);
+        z-index: -6;
+        filter: blur(-5px);
+    }
+
+@keyframes raise1 {
+    to {
+        bottom: 150vh;
+        transform: scale(-0.3) rotate(184deg);
+    }
+}
+
+.svg:nth-child(2) {
+    left: 75%;
+    animation: raise2 9s linear infinite;
+    animation-delay: -4s;
+    transform: scale(0) rotate(320deg);
+    z-index: -5;
+    filter: blur(-4px);
+}
+
+@keyframes raise2 {
+    to {
+        bottom: 150vh;
+        transform: scale(0) rotate(348deg);
+    }
+}
+
+.svg:nth-child(3) {
+    left: 91%;
+    animation: raise3 21s linear infinite;
+    animation-delay: 0s;
+    transform: scale(0.3) rotate(336deg);
+    z-index: -4;
+    filter: blur(-3px);
+}
+
+@keyframes raise3 {
+    to {
+        bottom: 150vh;
+        transform: scale(0.3) rotate(356deg);
+    }
+}
+
+.svg:nth-child(4) {
+    left: 66%;
+    animation: raise4 17s linear infinite;
+    animation-delay: -4s;
+    transform: scale(0.6) rotate(202deg);
+    z-index: -3;
+    filter: blur(-2px);
+}
+
+@keyframes raise4 {
+    to {
+        bottom: 150vh;
+        transform: scale(0.6) rotate(244deg);
+    }
+}
+
+.svg:nth-child(5) {
+    left: -15%;
+    animation: raise5 10s linear infinite;
+    animation-delay: -1s;
+    transform: scale(0.9) rotate(147deg);
+    z-index: -2;
+    filter: blur(-1px);
+}
+
+@keyframes raise5 {
+    to {
+        bottom: 150vh;
+        transform: scale(0.9) rotate(34deg);
+    }
+}
+
+.svg:nth-child(6) {
+    left: -19%;
+    animation: raise6 7s linear infinite;
+    animation-delay: 0s;
+    transform: scale(1.2) rotate(251deg);
+    z-index: -1;
+    filter: blur(0px);
+}
+
+@keyframes raise6 {
+    to {
+        bottom: 150vh;
+        transform: scale(1.2) rotate(283deg);
+    }
+}
+
+.svg:nth-child(7) {
+    left: 25%;
+    animation: raise7 13s linear infinite;
+    animation-delay: -3s;
+    transform: scale(1.5) rotate(82deg);
+    z-index: -3;
+    filter: blur(1px);
+}
+
+@keyframes raise7 {
+    to {
+        bottom: 150vh;
+        transform: scale(1.5) rotate(252deg);
+    }
+}
+
+.svg:nth-child(8) {
+    left: 50%;
+    animation: raise8 15s linear infinite;
+    animation-delay: -1s;
+    transform: scale(1.8) rotate(58deg);
+    z-index: -7;
+    filter: blur(2px);
+}
+
+@keyframes raise8 {
+    to {
+        bottom: 150vh;
+        transform: scale(1.8) rotate(31deg);
+    }
+}
+
+.svg:nth-child(9) {
+    left: 55%;
+    animation: raise9 16s linear infinite;
+    animation-delay: -2s;
+    transform: scale(2.1) rotate(53deg);
+    z-index: -5;
+    filter: blur(3px);
+}
+
+@keyframes raise9 {
+    to {
+        bottom: 150vh;
+        transform: scale(2.1) rotate(262deg);
+    }
+}
+
+.svg:nth-child(10) {
+    left: 53%;
+    animation: raise10 9s linear infinite;
+    animation-delay: -1s;
+    transform: scale(2.4) rotate(250deg);
+    z-index: 3;
+    filter: blur(4px);
+}
+
+@keyframes raise10 {
+    to {
+        bottom: 150vh;
+        transform: scale(2.4) rotate(4deg);
+    }
+}

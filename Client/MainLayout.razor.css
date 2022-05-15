@@ -1,11 +1,10 @@
-.page {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}
+/*@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700i,900i");
+*/
+/*
+}*/
 
 main {
-    flex: 1;
+    flex: 10%, auto, 10%;
 }
 
 .sidebar {
@@ -68,14 +67,23 @@ main {
         z-index: 1;
     }
 
-    .top-row.auth ::deep a:first-child {
-        flex: 1;
-        text-align: right;
-        width: 0;
-    }
+        .top-row.auth ::deep a:first-child {
+            flex: 1;
+            text-align: right;
+            width: 0;
+        }
 
     .top-row, article {
         padding-left: 2rem !important;
         padding-right: 1.5rem !important;
     }
 }
+
+
+
+
+
+
+
+
+ 
