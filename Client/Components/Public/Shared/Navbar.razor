@@ -1,6 +1,6 @@
 ﻿
 
-<nav class="navbar navbar-dark bg-dark navbar-expand-lg d-flex flex-wrap navbar-light shadow-no-hover justify-content-between align-items-center pb-lg-3">
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg d-flex flex-wrap navbar-light shadow-no-hover justify-content-between align-items-center pb-lg-1">
 
     <a href="/" class="navbar-brand md-f-size-1-5 text-white ps-2 m-0 mx-lg-5 fw-bold" data-bs-toggle="collapse.show">
         Didenko Kostya<span class="text-white fw-normal"> &#8211; .NET Dev</span>
@@ -13,13 +13,13 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
-            <li class="nav-item">
+            <li class="navbar-nav">
                 <a href="@HomePageUri" class="nav-link mx-3 md-and-smaller-my-3 @(IsPageActive(HomePageUri) ? "active" : string.Empty)"> 
                     Home
                 </a>
             </li>
-            <li class="nav-item">
-                <a href="@BlogPageUri" class="nav-link mx-3 md-and-smaller-my-3 @(IsPageActive(BlogPageUri) ? "active" : string.Empty)">
+            <li class="navbar-nav">
+                <a href="@BlogPageUri" class="nav-link mx-3 md-and-smaller-my-3 @(IsPageActive(HomePageUri) ? string.Empty : "active")">
                     Blog
                 </a>
             </li>
